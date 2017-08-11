@@ -137,7 +137,7 @@ mpp_frame_type_to_gst_video_format (MppFrameFormat fmt)
 static GstVideoInterlaceMode
 mpp_frame_mode_to_gst_interlace_mode (RK_U32 mode)
 {
-  switch (mode) {
+  switch (mode & MPP_FRAME_FLAG_FIELD_ORDER_MASK) {
     case MPP_FRAME_FLAG_DEINTERLACED:
       return GST_VIDEO_INTERLACE_MODE_MIXED;
     case MPP_FRAME_FLAG_BOT_FIRST:
