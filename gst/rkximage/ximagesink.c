@@ -12,7 +12,6 @@
 
 /* Object header */
 #include "ximagesink.h"
-#include "gstkmsutils.h"
 
 /* Debugging category */
 #include <gst/gstinfo.h>
@@ -30,6 +29,7 @@
 
 #include "gstkmsbufferpool.h"
 #include "gstkmsallocator.h"
+#include "gstkmsutils.h"
 
 /* A random dark color */
 #define RKXIMAGE_COLOR_KEY 0x010203
